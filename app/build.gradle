@@ -5,7 +5,7 @@ android {
     buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "com.home.task"
-        minSdkVersion 16
+        minSdkVersion 15
         targetSdkVersion 27
         multiDexEnabled true
         versionCode 1
@@ -24,7 +24,7 @@ android {
     dexOptions {
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_6
+        sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
 }
