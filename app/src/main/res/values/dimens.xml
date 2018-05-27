@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="spinnerWidth" tools:keep="@dimen/spinnerWidth">50dp</dimen>
+    <dimen name="marginBottom">50dp</dimen>
+    <dimen name="textHeight">20sp</dimen>
+</resources>
