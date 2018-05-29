@@ -12,10 +12,10 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.home.task.R;
 import com.home.task.Utils.Constants;
 import com.home.task.activitys.MainActivity;
 import com.home.task.jobs.PopulateTablesJob;
-import com.home.task.R;
 
 import java.util.ArrayList;
 
@@ -58,7 +58,7 @@ public class MainActivityFragment extends Fragment {
         arrayList.add(Constants.CONTACTS_ID2);
         arrayList.add(Constants.CONTACTS_ID3);
 
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(mActivity,
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(getActivity(),
                 android.R.layout.simple_spinner_item, arrayList);
 
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -67,7 +67,7 @@ public class MainActivityFragment extends Fragment {
             txtContacts.setText(Constants.STAGING_ID1 + ", " + Constants.EXTENSION_CONTEXT1 + ", " + Constants.STATUS1 + ", " + Constants.USER_ID1);
         }
 
-        new PopulateTablesJob(mActivity, spinner1, txtContacts).execute();
+        new PopulateTablesJob(getActivity(), spinner1, txtContacts).execute();
 
     }
 
